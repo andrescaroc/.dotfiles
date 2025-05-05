@@ -1,0 +1,5 @@
+links:
+  alacritty.toml: ~/.config/alacritty/alacritty.toml
+
+installs:
+  cmd: sudo pacman --noconfirm -S alacritty

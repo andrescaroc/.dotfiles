@@ -1,0 +1,5 @@
+links:
+  config.kdl: ~/.config/zellij/config.kdl
+
+installs:
+  cmd: sudo pacman --noconfirm -S zellij

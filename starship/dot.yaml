@@ -2,4 +2,4 @@ links:
   starship.toml: ~/.config/starship.toml
 
 installs:
-  cmd: sudo pacman -S starship
+  cmd: sudo pacman --noconfirm -S starship

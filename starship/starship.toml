@@ -1,0 +1,22 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# A minimal left prompt
+format = """$character"""
+
+# move the rest of the prompt to the right
+right_format = """$directory$all"""
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[kubernetes]
+disabled = false
+format = 'on [$symbol$cluster (@$namespace) ](blue)'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[terraform]
+disabled = true

@@ -1,17 +1,6 @@
-# Use powerline
-USE_POWERLINE="true"
-# Has weird character width
-# Example:
-#    is not a diamond
-HAS_WIDECHARS="false"
-# Source manjaro-zsh-configuration
-if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-  source /usr/share/zsh/manjaro-zsh-config
-fi
-# Use manjaro zsh prompt
-if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
-fi
+# Initialize completion system
+autoload -Uz compinit
+compinit
 
 # Set gpg to manage SSH connections
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
@@ -23,3 +12,25 @@ export VISUAL=$EDITOR
 alias vi="nvim"
 
 export TERRAFORM_KEY=/home/andres/deepc/blinky/ci/terraform/terraform
+export DEEPC_KEY=/home/andres/.ssh/gitlab_deepc.pub
+export PERSONAL_KEY=/home/andres/.ssh/andres_key.pub
+export GOBIN=$HOME/go/bin
+
+export PATH=/home/andres/go/bin:/home/andres/.cargo/bin:/home/andres/.local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+command -v flux >/dev/null && . <(flux completion zsh)
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+source /usr/share/nvm/init-nvm.sh
+source /home/andres/.config/broot/launcher/bash/br
+
+eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /home/andres/.cache/yay/scratchjr-desktop-git/src/ScratchJr-Desktop/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/andres/.cache/yay/scratchjr-desktop-git/src/ScratchJr-Desktop/node_modules/tabtab/.completions/electron-forge.zsh
+export PATH=/home/andres/bin:$PATH
+
+[[ -e "/home/andres/lib/oracle-cli/lib/python3.12/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/home/andres/lib/oracle-cli/lib/python3.12/site-packages/oci_cli/bin/oci_autocomplete.sh"
+
+alias oci='docker run --rm -v "$HOME/.oci:/oracle/.oci" oci'

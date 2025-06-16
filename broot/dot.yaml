@@ -1,0 +1,6 @@
+links:
+  conf.hjson: ~/.config/brot/conf.hjson
+  verbs.hjson: ~/.config/broot/verbs.hjson
+
+installs:
+  cmd: sudo pacman --noconfirm -S broot

@@ -1,5 +1,5 @@
 links:
-  conf.hjson: ~/.config/brot/conf.hjson
+  conf.hjson: ~/.config/broot/conf.hjson
   verbs.hjson: ~/.config/broot/verbs.hjson
 
 installs:

@@ -3,5 +3,5 @@ links:
   languages.toml: ~/.config/helix/languages.toml
 
 installs:
-  cmd: sudo pacman -S helix
+  cmd: sudo pacman --noconfirm -S helix
 

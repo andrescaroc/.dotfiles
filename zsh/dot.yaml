@@ -1,4 +1,4 @@
 links:
-  .zshrc: ~/.zshrc
+  zshrc: ~/.zshrc
 
 installs: false

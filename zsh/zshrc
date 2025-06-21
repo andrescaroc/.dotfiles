@@ -10,6 +10,7 @@ gpgconf --launch gpg-agent
 export EDITOR=/usr/bin/helix
 export VISUAL=$EDITOR
 alias vi="nvim"
+alias hx="helix"
 
 export TERRAFORM_KEY=/home/andres/deepc/blinky/ci/terraform/terraform
 export DEEPC_KEY=/home/andres/.ssh/gitlab_deepc.pub

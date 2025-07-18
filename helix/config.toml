@@ -28,4 +28,4 @@ max-indent-retain = 0
 v = ":sh zellij run -- cargo clippy --tests -- -Dwarnings"
 n = ":sh zellij run -- cargo run"
 t = ":sh zellij run -- cargo test"
-i = ":sh zellij run -- helix ~/lsp-ai.md"
+i = ":sh zellij run -- ~/.config/aichat/rag.sh"

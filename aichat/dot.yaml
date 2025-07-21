@@ -1,5 +1,2 @@
-links:
-  config.yaml: ~/.config/aichat/config.yaml
-
 installs:
   cmd: cargo install aichat

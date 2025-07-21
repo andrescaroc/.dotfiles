@@ -16,6 +16,7 @@ export TERRAFORM_KEY=/home/andres/deepc/blinky/ci/terraform/terraform
 export DEEPC_KEY=/home/andres/.ssh/gitlab_deepc.pub
 export PERSONAL_KEY=/home/andres/.ssh/andres_key.pub
 export GOBIN=$HOME/go/bin
+export AICHAT_CONFIG_DIR=/home/andres/Sync/aichat
 
 export PATH=/home/andres/go/bin:/home/andres/.cargo/bin:/home/andres/.local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 

@@ -1,10 +1,4 @@
-[terminal.shell]
-program = "zellij"
-args = ["a", "-c", "default"]
-
 [window]
-opacity = 0.9
+opacity = 0.85
 decorations = "None"
 startup_mode = "Maximized"
-
-[terminal]
